@@ -4,7 +4,6 @@ import { Analytics } from '@vercel/analytics/react';
 import App from './App.jsx';
 import Loader from './Components/Loader.jsx';
 import Navbar from './Components/Navbar.jsx';
-import HeroOverlay from './Components/HeroOverlay.jsx';
 import PortfolioModal from './Components/PortfolioModal.jsx';
 import { portfolioData } from './data/portfolioData';
 import './overlay.css';
@@ -41,9 +40,6 @@ export default function PortfolioApp() {
     <div style={{ position: 'relative', width: '100%', height: '100%', minHeight: '100vh', overflow: 'hidden', background: '#020617' }}>
       {/* Top Accessible Navigation */}
       <Navbar onOpenSection={handleOpenSection} />
-
-      {/* Floating Hero HUD Card */}
-      <HeroOverlay onOpenSection={handleOpenSection} />
 
       {/* Floating Recruiter Action Group on Bottom Right */}
       <div className="rk-fab-group">
