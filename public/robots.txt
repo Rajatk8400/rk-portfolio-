@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rajat-kashyap.netlify.app/sitemap.xml
